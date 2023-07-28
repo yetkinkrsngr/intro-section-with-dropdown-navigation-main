@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 20px;
+  background-color: hsla(0, 0%, 41%, 0.1);
+}
+ul {
+  list-style: none;
+}
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+a {
+  text-decoration: none;
+  color: var(--AlmostBlack);
+}
+.onlyMobileWiev {
+  display: none;
+}
+
+body {
+  width: 100%;
+  overflow: hidden;
+}
+nav {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  padding: 20px;
+}
+.menu {
+  position: absolute;
+  left: 150px;
+  top: -1px;
+  width: 320px;
+  height: 130vh;
+  border: 1px solid var(--AlmostBlack);
+  padding: 10px;
+  z-index: 100;
+  background-color: var(--AlmostWhite);
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow for a nice effect */
+  transition: right 0.3s ease; /* Add a transition for the right property */
+}
+.menu li {
+  padding: 10px;
+}
+.sub-links {
+  padding: 10px;
+  margin-left: 15px;
+  display: none;
+  transition: all 0.3s ease;
+}
+.sub-links-a {
+  margin-left: 10px;
+}
+.sub-links-second {
+  padding: 10px;
+  margin-left: 15px;
+  display: none;
+}
+.onlyMobileWiev {
+  display: block;
+}
+.close {
+  cursor: pointer;
+  margin-left: 180px;
+}
+/* CSS */
+.clickable-image {
+  transition: transform 0.3s ease; /* Add a transition for the transform property */
+}
+.rotate-up {
+  transform: rotate(180deg); /* Rotate the arrow up */
+}
+.btn-login {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: var(--AlmostWhite);
+}
+#register {
+  border: 1px solid var(--AlmostBlack);
+  border-radius: 20px;
+}
+.hamburger {
+  transition: transform 0.3s ease;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust the opacity (0.6) to control the blur effect */
+  backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+  pointer-events: none; /* Allow clicks to pass through the overlay to the underlying elements */
+  display: none;
+  transition: all 0.3s ease;
+}
+.upside {
+  width: 100%;
+  height: 350px;
+  background-image: url("../images/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.downside {
+  text-align: center;
+  padding: 10px 0;
+}
+.downside h1 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.downside p {
+  font-size: 15px;
+  margin: 20px 0;
+}
+.downside button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: var(--AlmostBlack);
+  color: var(--AlmostWhite);
+  border-radius: 15px;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.imgside {
+  display: flex;
+  justify-content: space-around;
+}
+.imgside img {
+  object-fit: contain;
+  width: 20%;
+}

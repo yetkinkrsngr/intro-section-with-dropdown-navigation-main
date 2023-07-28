@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 20px;
+  background-color: hsla(0, 0%, 41%, 0.1);
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+a {
+  text-decoration: none;
+  color: var(--AlmostBlack);
+}
+.onlyMobileWiev {
+  display: none;
+}
+nav {
+  display: flex;
+  padding: 40px;
+}
+.logo {
+  width: 200px;
+  height: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+.menu {
+  display: flex;
+  width: 100%;
+  margin-left: 40px;
+}
+.menu li {
+  margin-left: 38px;
+}
+
+#login {
+  margin-left: 300px;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+#login:hover {
+  transform: scale(1.1);
+}
+.btn-login {
+  width: 170px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: var(--AlmostWhite);
+}
+#register {
+  border: 1px solid var(--AlmostBlack);
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+#register:hover {
+  transform: scale(1.1);
+}
+.features-li {
+  position: relative;
+  width: 130px;
+}
+.sub-links {
+  position: absolute;
+  top: 25px;
+  left: -60px;
+  width: 180px;
+  height: 180px;
+  background-color: var(--AlmostWhite);
+  border-radius: 5px;
+  padding: 20px;
+}
+.sub-links li {
+  width: 100%;
+  margin-left: -1px;
+  margin-top: 10px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.sub-links li:hover {
+  transform: scale(1.1);
+}
+.sub-links li a {
+  position: absolute;
+  left: 40px;
+}
+.company-li {
+  position: relative;
+  width: 130px;
+}
+.sub-links-second {
+  position: absolute;
+  top: 25px;
+  width: 150px;
+  height: 150px;
+  background-color: var(--AlmostWhite);
+  border-radius: 5px;
+  padding: 20px;
+}
+.sub-links-second li {
+  width: 100%;
+  margin-left: -1px;
+  margin-top: 10px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.sub-links-second li:hover {
+  transform: scale(1.1);
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+}
+.upside {
+  width: 750px;
+  height: 500px;
+  border: 1px solid var(--AlmostBlack);
+  background-image: url("../images/image-hero-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease-in-out;
+}
+.upside:hover {
+  transform: scale(1.1) rotate(1deg);
+}
+.downside {
+  width: 900px;
+  height: 500px;
+  padding: 80px;
+}
+.downside h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+#hspan {
+  display: block;
+}
+.downside p {
+  padding: 0 150px 0 0;
+  line-height: 25px;
+}
+.btn-start {
+  margin: 40px 0;
+  width: 150px;
+  height: 50px;
+  background-color: var(--AlmostBlack);
+  color: var(--AlmostWhite);
+  border-radius: 15px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.btn-start:hover {
+  background-color: var(--AlmostWhite);
+  color: var(--AlmostBlack);
+}
+.imgside {
+  display: flex;
+  justify-content: space-between;
+}
+.imgside img {
+  object-fit: contain;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.imgside img:hover {
+  transform: scale(1.1) rotate3d(1, 1, 1, 360deg);
+}
+
+/* Add transition to the transform property for arrow rotation */
+#features-arrow,
+#company-arrow {
+  transition: transform 0.3s ease;
+}
+
+/* Add transition to the display property for submenu appearance */
+.sub-links,
+.sub-links-second {
+  transition: display 0.3s ease;
+}
+.hidden {
+  display: none;
+}
+.sub-links,
+.sub-links-second {
+  display: none;
+}
